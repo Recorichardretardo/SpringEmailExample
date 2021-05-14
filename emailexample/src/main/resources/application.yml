@@ -1,0 +1,8 @@
+server:
+  port: 8081
+  
+  
+#http://localhost:8081/send
+#https://www.google.com/settings/security/lesssecureapps
+#https://support.google.com/accounts/answer/185833?p=InvalidSecondFactor
+#https://hotter.io/docs/email-accounts/secure-app-gmail/
