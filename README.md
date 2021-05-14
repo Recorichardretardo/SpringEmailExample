@@ -13,7 +13,7 @@ Please note that allowing less secure apps can make it easier for hijackers to b
 
 
 
-#https://www.google.com/settings/security/lesssecureapps
+https://www.google.com/settings/security/lesssecureapps
 
-#To send a mail using gmail we need app password. Go to the below link to generate app password for your gmail id
-#https://support.google.com/accounts/answer/185833?p=InvalidSecondFactor
+* To send a mail using gmail we need app password. Go to the below link to generate app password for your gmail id
+https://support.google.com/accounts/answer/185833?p=InvalidSecondFactor
