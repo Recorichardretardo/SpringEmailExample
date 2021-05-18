@@ -10,3 +10,10 @@ Please see link below:
 https://hotter.io/docs/email-accounts/secure-app-gmail/
 
 Please note that allowing less secure apps can make it easier for hijackers to break into user accounts and devices. Blocking sign-ins from these apps helps keep accounts safe. It will be a good idea to turn it off after you're done testing.
+
+
+
+https://www.google.com/settings/security/lesssecureapps
+
+* To send a mail using gmail we need app password. Go to the below link to generate app password for your gmail id
+https://support.google.com/accounts/answer/185833?p=InvalidSecondFactor
