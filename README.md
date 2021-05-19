@@ -17,3 +17,9 @@ https://www.google.com/settings/security/lesssecureapps
 
 * To send a mail using gmail we need app password. Go to the below link to generate app password for your gmail id
 https://support.google.com/accounts/answer/185833?p=InvalidSecondFactor
+
+https://localise.biz/free/converter
+
+https://support.google.com/mail/answer/22370?hl=en
+https://stackoverflow.com/questions/9140176/spring-mail-mimemessage-has-an-incorrect-from-set
+https://stackoverflow.com/questions/13946581/spring-java-mail-the-from-address-is-being-ignored/27420030

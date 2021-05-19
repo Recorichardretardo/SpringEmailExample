@@ -1,6 +1,6 @@
 package com.example.email;
 
 public interface Email {
-
-	void sendEmail(String toAddress, String subject, String body);
+	void sendEmailAttachment(String toAddress, String[] toCc, String subject, String body, String filePath);
+	void sendEmail(String toAddress, String[] toCc, String subject, String body);	
 }
