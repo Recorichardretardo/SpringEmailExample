@@ -14,7 +14,7 @@ public class TestEmail {
 	public String sendMail() {  
 		String response;
 	try {
-		email.sendEmail("springemail8@gmail.com", "Spring Boot Test Email", "Test Mail Body");
+		email.sendEmail("rr1433885@gmail.com", "Spring Boot Test Email", "Spring Boot Test Mail Body sent ");
 		response = "Mail sent";
 	}catch(Exception e) {
 		response = "Mail sending failed";
