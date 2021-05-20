@@ -10,6 +10,7 @@ import javax.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -19,6 +20,7 @@ public class EmailImpl implements Email {
 	private JavaMailSender sender;
 
 	@Override
+	@Async
 	public void sendEmailAttachment(String toAddress, String[] toCc, String subject, String body, String filePath) {
 		MimeMessage message = sender.createMimeMessage();
 		Date now = new Date();
@@ -32,6 +34,7 @@ public class EmailImpl implements Email {
 			helper.setText(body);
 			helper.addAttachment("Filename-"+dateTime.toString(), new File(filePath));	
 			sender.send(message);
+			System.out.println("Email sent successfully");
 		} catch (MessagingException e) {
 			e.printStackTrace();
 		}

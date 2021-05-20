@@ -23,3 +23,7 @@ https://localise.biz/free/converter
 https://support.google.com/mail/answer/22370?hl=en
 https://stackoverflow.com/questions/9140176/spring-mail-mimemessage-has-an-incorrect-from-set
 https://stackoverflow.com/questions/13946581/spring-java-mail-the-from-address-is-being-ignored/27420030
+
+
+sts commands
+https://stackoverflow.com/questions/7713654/how-to-quickly-implement-override-methods-in-eclipse

@@ -17,7 +17,7 @@ import com.itextpdf.text.DocumentException;
 public class TestEmail {
 
 	@Autowired
-	EmailImpl email;
+	Email email;
 
 	@Autowired
 	PDFGenerator pdfGenerator;
@@ -71,7 +71,6 @@ public class TestEmail {
 			response = "Mail sending failed";
 			System.out.println(e.getMessage());
 		}
-
 		return response;
 	}
 
@@ -79,9 +78,9 @@ public class TestEmail {
 	public String generatePdfAndSendAsAttachment() {
 		Date now = new Date();
 		LocalDateTime dateTime = LocalDateTime.ofInstant(now.toInstant(), ZoneId.systemDefault());
-		String response = "";
+		String response = "Thanks!, You will get confirmation mail in 5 mins,"+dateTime;
 		String toAddress = "rr1433885@gmail.com";
-		String[] toCc = {};
+		String[] toCc = {"rr1433885@gmail.com"};
 		String subject = "Spring Boot Test Email: "+dateTime.toString();
 		String body = "Spring Boot Test Please find attachment.";
 		String filePath = "test" + LocalDate.now().toString() + ".pdf";
@@ -89,9 +88,9 @@ public class TestEmail {
 			pdfGenerator.generatePDF(filePath);
 			try {
 				email.sendEmailAttachment(toAddress, toCc, subject, body, filePath);
-				response = "Mail sent";
+				System.out.println("Sending Email is in-progress");
 			} catch (Exception e) {
-				response = "Mail sending failed";
+				System.out.println("Failed Mail sending");
 				System.out.println(e.getMessage());
 			}
 		} catch (FileNotFoundException | DocumentException e1) {
